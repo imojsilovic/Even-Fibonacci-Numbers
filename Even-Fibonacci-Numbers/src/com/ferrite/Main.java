@@ -19,6 +19,23 @@ public class Main {
 		System.out.println("n-th: " + n);
 		System.out.println("Sum: " + sum);
 
+		System.out.println("Iteration method.");
+
+		beginTime = System.nanoTime();
+
+		sum = 0L;
+		long p1 = 0L, p2 = 1L;
+		long i;
+		for (; (i = p1 + p2) < limit; p1 = p2, p2 = i) {
+			if (i % 2 == 0) {
+				sum += i;
+			}
+		}
+
+		System.out.println(String.format("Time: %.3f [ms]", (System.nanoTime() - beginTime) / 1000.));
+		System.out.println("i: " + i);
+		System.out.println("Sum: " + sum);
+
 		System.out.println("End.");
 
 	}
