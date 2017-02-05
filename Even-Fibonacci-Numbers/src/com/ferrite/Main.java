@@ -15,7 +15,7 @@ public class Main {
 
 		long sum = (fibonacci(n + 2L) - 1L) / 2L;
 
-		System.out.println(String.format("Time: %.3f [ms]", (System.nanoTime() - beginTime) / 1000.));
+		System.out.println(String.format("Time: %.3f [ms]", (System.nanoTime() - beginTime) / 1_000_000.));
 		System.out.println("n-th: " + n);
 		System.out.println("Sum: " + sum);
 
@@ -32,7 +32,7 @@ public class Main {
 			}
 		}
 
-		System.out.println(String.format("Time: %.3f [ms]", (System.nanoTime() - beginTime) / 1000.));
+		System.out.println(String.format("Time: %.3f [ms]", (System.nanoTime() - beginTime) / 1_000_000.));
 		System.out.println("i: " + i);
 		System.out.println("Sum: " + sum);
 
